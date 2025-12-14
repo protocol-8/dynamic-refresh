@@ -14,7 +14,7 @@ try {
 
     # 2. Download repo zip
     $tempZip = "$env:TEMP\dynamic-refresh.zip"
-    $repoUrl = "https://github.com/xInevitable/dynamic-refresh/archive/refs/heads/main.zip"
+    $repoUrl = "https://github.com/protocol-8/dynamic-refresh/archive/refs/heads/main.zip"
     Write-Host "Downloading repository from $repoUrl ..."
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
     Invoke-WebRequest -Uri $repoUrl -OutFile $tempZip -UseBasicParsing -ErrorAction Stop
